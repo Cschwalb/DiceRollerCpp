@@ -1,0 +1,3 @@
+/Users/crypto/CLionProjects/DiceRoller/cmake-build-debug/CMakeFiles/DiceRoller.dir
+/Users/crypto/CLionProjects/DiceRoller/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/crypto/CLionProjects/DiceRoller/cmake-build-debug/CMakeFiles/rebuild_cache.dir
