@@ -38,6 +38,7 @@ public:
             std::mt19937 mt(rd());
             std::uniform_int_distribution<int> dist(1, this->m_nMax);
             int randomNumber = dist(mt);
+            std::cout<<"Index:  "<< index << "\tDice Roll:  " << randomNumber<<std::endl;
             total += randomNumber;
         }
         return total;
@@ -67,8 +68,11 @@ std::tuple<int, int> parseContent(std::string Input) // returns first and last n
     return ret;
 }
 int main() {
-    std::tuple<int, int> ret = parseContent("1d20");
+    std::cout<<"Please input your dice roll:  ";
+    std::string diceRoll;
+    std::cin>>diceRoll;
+    std::tuple<int, int> ret = parseContent(diceRoll);
     Dice rolling = Dice(std::get<1>(ret), std::get<0>(ret));
-    std::cout<<rolling.rollDice();
+    rolling.rollDice();
     return 0;
 }
