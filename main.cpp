@@ -4,8 +4,6 @@
 #include <tuple>
 #include <random>
 
-
-
 class Dice
 {
 private:
